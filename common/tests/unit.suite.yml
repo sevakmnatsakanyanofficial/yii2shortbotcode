@@ -1,0 +1,10 @@
+suite_namespace: common\tests\unit
+actor: AcceptanceTester
+bootstrap: false
+modules:
+    enabled:
+        - Yii2:
+            part: fixtures
+        - REST:
+            depends: Yii2
+            part: json
